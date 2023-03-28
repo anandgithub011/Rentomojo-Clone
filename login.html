@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup 4-FURNITURE</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        #navbar{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+        }
+        #nav{
+            width: 80%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* margin: auto; */
+
+        }
+        #navbar > #logo{
+            width: 20%;
+        }
+        #navbar >div > a img{
+            width: 25%;
+            border-radius: 5px;
+        }
+        #nav > a h1{
+            color: rgb(49, 49, 52);
+            font-size: smaller;
+        }
+        #nav > a h2{
+            background-color: rgb(234, 71, 22);
+            border-radius: 5px;
+            padding: 6px;
+            color: white;
+            font-size: smaller;
+        }
+        #nav > #Filter-location{
+            border: none;
+        }
+        #nav > a h3{
+            color: rgb(96, 96, 95);
+            margin-left: -130px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: smaller;
+        }
+        #container{
+            margin: auto;
+            width: 60%;
+            display: flex;
+            flex-direction: row;
+        }
+        #container > #image > img{
+            width: 100%;
+        }
+        #container div{
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #search{
+            background-color: aliceblue;
+            border-radius: 5px;
+            border: 1px solid;
+            padding-right: 210px;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id="logo">
+            <a href="./index.html">
+                <img src="./4-furniture (1).png" alt="">
+            </a>
+        </div>
+        <div id="nav">
+            <a href="./index.html">
+                <h3>4-FURNITURE</h3>
+            </a>
+            <select name="" id="Filter-location">
+                <option value="">Location</option>
+                <option value="New Delhi">New Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Bengaluru">Bengaluru</option>
+                <option value="Patna">Patna</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Dehradun">Dehradun</option>
+            </select>
+            <input type="text" id="search" placeholder="Search for products">
+            <a href="./cart.html">
+                <h1>Cart</h1>
+            </a>
+            <a href="./login.html">
+                <h2>LOGIN/SIGNUP</h2>
+            </a>
+        </div>
+    </div>
+    <div id="container">
+        <div id="image">
+            <img src="./login cat pic.png" alt="error">
+        </div>
+        <div id="card">
+            <input type="text" placeholder="First Name" id="Fname">
+            <input type="text" placeholder="Last Name" id="Lname">
+            <input type="emial" placeholder="Email" id="email">
+            <input type="number-text" placeholder="Password" id="pass">
+            <input type="text" placeholder="Confirm Password" id="confirm-pass">
+            <button>SUBMIT</button>
+        </div>
+    </div>
+</body>
+<script>
+
+</script>
+</html>
