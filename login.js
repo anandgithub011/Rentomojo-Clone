@@ -5,35 +5,35 @@ let emailInp = document.querySelector("#email");
 let passInp = document.querySelector("#pass");
 
 
-formInp.addEventListener("submit",(e)=>{
+formInp.addEventListener("submit",function(e){
     e.preventDefault();
 
     let objlogin = {
         customerEmail: emailInp.value,
-        customerPassword: passInp.value,
+        customerPass: passInp.value,
     }
-
-    if(checkSignIN(objlogin.customerEmail,objlogin.customerPassword)==false){
+// console.log(objlogin);
+    if(checkSignIN(objlogin.customerEmail,objlogin.customerPass)==false){
         alert("WRONG CREDENTIAL");
+    
     }
     else{
         localStorage.setItem("login",JSON.stringify(LSData));
         alert("Login Successful");
         window.location.href="./index.html";
-
     }
-
     formInp.reset();
-    
+
 })
 
-function checkSignIN(customerEmail,customerpassword){
+function checkSignIN(customerEmail,customerPass){
 
     let filtered = LSData.filter((el)=>{
-        return el.customerEmail == customerEmail && el.customerpassword == customerpassword;
+        return el.customerEmail === customerEmail && el.customerPass === customerPass;
     })
-    
+    console.log(filtered);
     if(filtered.length > 0){
+
         return true;
     }
     else{

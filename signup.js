@@ -32,7 +32,6 @@ formInp.addEventListener("submit",function(ele){
 
 })
 
-
 function checkEmail(customerEmail){
     let filtered = LSData.filter((e)=>{
         return customerEmail == e.customerEmail;

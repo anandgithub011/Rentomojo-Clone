@@ -93,23 +93,32 @@ body{
 }
 .card > img{
     /* border: 12px solid red; */
+    height: 220px;
     
 }
 .card-1{
     border: 1px solid grey;
     background-color: rgb(240, 248, 254);
-    width: 70%;
-    padding-left: 90px;
-    padding-right: 90px;
+    width: 20%;
+    height: 15%;
+    /* padding-left: 90px;
+    padding-right: 90px; */
     margin: auto;
-    margin-top: -40px;
+    /* margin-top: -40px; */
     display: flex;
     justify-content: center;
-    gap: 20px;
-    z-index: 1;
+    gap: 30px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: -191px;
+    left: -715px;
 }
 #heading{
     margin-left: 130px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-top: 40px;
 }
+a{
+    text-decoration:none;
+ }
