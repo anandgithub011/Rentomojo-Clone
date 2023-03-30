@@ -1,0 +1,208 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#navbar{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px; */
+}
+#nav{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#navbar > #logo{
+    width: 20%;
+}
+#navbar >div > a img{
+    width: 25%;
+    border-radius: 5px;
+}
+#nav > a h1{
+    color: rgb(49, 49, 52);
+    font-size: smaller;
+}
+#nav > a h2{
+    background-color: rgb(234, 71, 22);
+    border-radius: 5px;
+    padding: 6px;
+    color: white;
+    font-size: smaller;
+}
+#nav > #Filter-location{
+    border: none;
+}
+#nav > a h3{
+    color: rgb(96, 96, 95);
+    margin-left: -130px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: smaller;
+}
+#search{
+    background-color: aliceblue;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 8px;
+    padding-right: 210px;
+}
+#nav > a >#cart-logo{
+    width: 30%;
+}
+#nav #cart-flex{
+    width: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+#home-page-image>img{
+    width: 78%;
+    border-radius: 8px;
+    margin-left: 148px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+#search{
+    background-color: aliceblue;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 8px;
+    padding-right: 210px;
+}
+#category-rent{
+   width: 78%;
+   display: grid;
+   grid-template-columns: repeat(6,1fr);
+   justify-content: center;
+   margin: auto;
+   gap: 15px;
+}
+.category-card{
+    height: 100px;
+    border: 1px solid grey;
+    border-radius: 9px;
+    
+}
+#category-rent img{
+    padding-top: 10px;
+    margin-left: 60px;
+    height: 50%;
+}
+#category-rent p{
+    text-align: center;
+    font-size: smaller;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#category-rent div:hover{
+    font-size: larger;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+#nav > a >#cart-logo{
+    width: 30%;
+}
+#nav #cart-flex{
+    width: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+#product .container {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+#product .container >div{
+    width: 95%;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+#product .container img {
+    width: 100%;
+}
+#product .container div:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    
+}
+#product{
+    width: 90%;
+    margin: auto;
+}
+#product #firstline{
+    padding-top: 120px;
+    margin-left: 68px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#product #underline{
+    margin-left: 68px;
+    text-decoration: underline red;
+    font-weight: 10;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#above-footer-text #line1{
+    padding-top: 120px;
+    margin-left: 150px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#above-footer-text #line2{
+    margin-left: 150px;
+    text-decoration: underline red;
+    font-weight: 10;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#above-footer{
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: auto ;
+    padding-bottom: 35px;
+    /* gap: 10px; */
+}
+#above-footer>div{
+    padding: 50px;
+}
+#above-footer img{
+    width: 14%;
+}
+#above-footer button{
+    background-color: white;
+    border: none;
+    color: rgb(249, 88, 55);
+    margin-left: -195px;
+
+}
+#footer1{
+    background-color: rgb(242, 243, 251);
+    padding: 20px 130px 8px 130px;
+    width: 99%;
+    margin: auto;
+}
+#footer1 p{
+    font-size: smaller;
+    color: rgb(169, 171, 173);
+}
+#footer1 h6{
+    color: rgb(100, 102, 105);
+}
+#footer2 h4, #footer2 p{
+    color: rgb(100, 102, 105);
+}
+#footer2{
+    background-color: rgb(242, 243, 251);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 20px 130px 8px 130px;
+    width: 99%;
+    margin: auto;
+}
+#footer2 button{
+    border-radius: 5px;
+    border: 1px solid;
+    width: 60%;
+    height: 35px;
+}

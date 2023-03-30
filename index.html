@@ -4,69 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>4-FURNITURE</title>
-    <style>
-        *{
-            box-sizing: border-box;
-        }
-        body{
-            margin: 0px;
-            padding: 0px;
-        }
-        #navbar{
-            width: 80%;
-            margin: auto;
-            display: flex;
-            align-items: center;
-        }
-        #nav{
-            width: 80%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            /* margin: auto; */
-
-        }
-        #navbar > #logo{
-            width: 20%;
-        }
-        #navbar >div > a img{
-            width: 25%;
-            border-radius: 5px;
-        }
-        #nav > a h1{
-            color: rgb(49, 49, 52);
-            font-size: smaller;
-        }
-        #nav > a h2{
-            background-color: rgb(234, 71, 22);
-            border-radius: 5px;
-            padding: 6px;
-            color: white;
-            font-size: smaller;
-        }
-        #nav > #Filter-location{
-            border: none;
-        }
-        #nav > a h3{
-            color: rgb(96, 96, 95);
-            margin-left: -130px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: smaller;
-        }
-        #home-page-image>img{
-            width: 70%;
-            border-radius: 8px;
-            margin-left: 230px;
-            margin-top: 100px;
-        }
-        #search{
-            background-color: aliceblue;
-            border-radius: 5px;
-            border: 1px solid;
-            padding-right: 210px;
-        }
-    </style>
+    <link rel="stylesheet" href="./style/index.css">
+    <title>HOME-4-FURNITURE</title>
+    <style></style>
 </head>
 <body>
     <div id="navbar">
@@ -87,12 +27,14 @@
                 <option value="Patna">Patna</option>
                 <option value="Kolkata">Kolkata</option>
                 <option value="Dehradun">Dehradun</option>
+                <option value="CommingSoon">CommingSoon ...</option>
             </select>
             <input type="text" id="search" placeholder="Search for products">
-            <a href="./cart.html">
+            <a href="./cart.html" id="cart-flex">
+                <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" id="cart-logo" alt="">
                 <h1>Cart</h1>
             </a>
-            <a href="./login.html">
+            <a href="./signup.html">
                 <h2>LOGIN/SIGNUP</h2>
             </a>
         </div>
@@ -100,8 +42,122 @@
     <div id="home-page-image">
         <img src="https://s.rmjo.in/AC-banner-Web-.jpg" alt="err">
     </div>
-</body>
-<script>
+    <div id="category-rent">
+        <a href="./package.html">
+            <div class="category-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvYYximZTH_rsSMv6LXh4LeUD6w1_QD_D_d3zKxkY4kQ&s" alt="">
+                <p>Packages</p>
+            </div>
+        </a>
+        <a href="./furniture.html">
+            <div class="category-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/4312/4312464.png" alt="">
+                <p>Furniture</p>
+            </div>
+        </a>
+        <a href="./appliances.html">
+            <div class="category-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS465aYeVpKnlU1gun2IzDHBI36NysUrp0NAjZHVwU&s" alt="">
+                <p>Appliances</p>
+            </div>
+        </a>
+        <a href="./electronics.html">
+            <div class="category-card">
+                <img src="https://www.iconpacks.net/icons/1/free-smartphone-icon-695-thumb.png" alt="">
+                <p>Electronics</p>
+            </div>
+        </a>
+        <a href="./fitness.html">
+            <div class="category-card">
+                <img src="https://clipartart.com/images/indoor-cycling-clipart-3.jpg" alt="">
+                <p>Fitness</p>
+            </div>
+        </a>
+        <a href="./WFH.html">
+            <div class="category-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRasGw3vc3ddPF7jph5E5tlgkLbrbAJqgTUzp4PnW1pe2ODQ6ntWo_uRr-yskAIRcbHrNU&usqp=CAU" alt="">
+                <p>WFH Essentials</p>
+            </div>
+        </a>
+    </div>
+    <select id="filter">
+        <option value="">Select Brand</option>
+        <option value="Puma">Puma</option>
+        <option value="Gap">Gap</option>
+        <option value="Bady Moo">Bady Moo</option>
+    </select>
+    <div id="product">
+        <h2 id="firstline">You'll love to</h2>
+        <h2 id="underline">take these home</h2>
+        <div class="container"></div>
+    </div>
+    <div id="above-footer-text">
+        <h2 id="line1">There's more</h2>
+        <h2 id="line2">to renting</h2>
+    </div>    
+    <div id="above-footer">
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPf45MTtwhlqu0Ohrf2IksJMZjqkW8w6NxzoXbvTLFxAinHqzT4AGeYB68-3XRe2J7CHQ&usqp=CAU" alt="">
+            <h4>Finest-quality products</h4>
+            <p>Quality matters to you, and us! That's why we do a strict quality-check for every product.</p>
+        </div>
+        <div>
+            <img src="https://cdn-icons-png.flaticon.com/512/2775/2775994.png" alt="">
+            <h4>Free relocation</h4>
+            <p>Changing your house or even your city? We'll relocate your rented products for free.</p>
+        </div>
+        <div>
+            <img src="https://www.infraredindia.com/images/icon-sales-after-service.png" alt="">
+            <h4>Free maintenance</h4>
+            <p>Keeping your rented products in a spick and span condition is on us, so you can sit back and relax.</p>
+        </div>
+        <div>
+            <img src="https://www.iconbunny.com/icons/media/catalog/product/1/0/1036.13-cancel-order-icon-iconbunny.jpg" alt="">
+            <h4>Cancel anytime</h4>
+            <p>Pay only for the time you use the product and close your subscription without any hassle.</p>
+        </div>
+        <div>
+            <img src="https://media.istockphoto.com/id/948486842/vector/cardboard-package-box-icon-product-return-and-refund-illustration.jpg?s=170667a&w=0&k=20&c=rf49CFaltVuWU0KjSTqeKqhUAS6G0GV6I0shs3F-3jM=" alt="">
+            <h4>Easy return on delivery</h4>
+            <p>If you don't like the product on delivery, you can return it right away—no questions asked.</p>
+        </div>
+        <div>
+            <img src="https://t3.ftcdn.net/jpg/00/83/46/32/360_F_83463291_W295rGeBxvt0sCTNDpzES6j7oXk2PsJl.jpg" alt="">
+            <h4>Keep upgrading</h4>
+            <p>Bored of the same product? Upgrade to try another, newer design and enjoy the change!</p>
+        </div>
+        <button>KNOW MORE</button>
+    </div>
+    <div id="footer1">
+        <h5>4-FURNITURE: Upgrade To Your Dream Lifestyle At An Unbelievably Low Price!</h5>
+        <P>4-Furniture is your ticket to a better lifestyle in India. We provide designer furniture, the newest gadgets, and bestselling appliances on rent in major Indian cities. You can use the best products available in the market at just a fraction of their retail value. You pay us a small monthly fee, which becomes lesser the longer you rent from us.</p>
 
-</script>
+        <p>Besides saving you money, we do our best to provide you with an exceptional, super-comfortable rental experience. Our ordering process is straightforward and efficient. You can order from us in a matter of minutes from your PC or smartphone. We offer speedy delivery in major Indian cities, namely Bangalore, Mumbai, Delhi, Chennai, Pune, Hyderabad, Gurgaon, and Noida.</p>
+            
+        <p>No matter what product you rent from us, we will provide you with several complementary benefits with it. The benefits range from a yearly product swap option to a periodic free maintenance service. These are benefits no regular retailer offers. Start renting now!</P>
+            
+        <h6>Read More ></h6>   
+    </div>
+    <div id="footer2">
+        <h4>4-Furniture</h4>
+        <h4>INFORMATION</h4>
+        <h4>POLICIES</h4>
+        <h4>NEED HELP ?</h4>
+        <p>About Us</p>
+        <p>Blog</p>
+        <p>Shipping Policy</p>
+        <button>Chat with us (9am-6pm)</button>
+        <p>Investors</p>
+        <p>Documents Required</p>
+        <p>Privacy Policy</p>
+        <p>jo@4-furniture.com</p>
+        <p>Carrers</p>
+        <p>Blog</p>
+        <p>Rental Terms & Conditions</p>
+        <h4>DOWNLOAD APP</h4>
+    </div>
+</body>
+<script  src="index.js"></script>
 </html>
+<!-- <script src="./Scripts/index.js"></script> -->
+
