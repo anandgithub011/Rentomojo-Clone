@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#navbar{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+#nav{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#navbar > #logo{
+    width: 20%;
+}
+#navbar >div > a img{
+    width: 25%;
+    border-radius: 5px;
+}
+#nav > a h1{
+    color: rgb(49, 49, 52);
+    font-size: smaller;
+}
+#nav > a h2{
+    background-color: rgb(234, 71, 22);
+    border-radius: 5px;
+    padding: 6px;
+    color: white;
+    font-size: smaller;
+}
+#nav > #Filter-location{
+    border: none;
+}
+#nav > a h3{
+    color: rgb(96, 96, 95);
+    margin-left: -130px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: smaller;
+}
+#container{
+    margin: auto;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+}
+#container img{
+    width: 100%;
+}
+form{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#form{
+    /* flex-direction: column; */
+    padding: 40px;
+    border: 1px solid rgb(255, 253, 253);
+    border-radius: 10px;
+    background-color: rgb(247, 253, 253);
+    gap: 30px;
+}
+#form input{
+    padding: 15px;
+    border-radius: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#search{
+    background-color: aliceblue;
+    border-radius: 5px;
+    border: 1px solid;
+    padding: 8px;
+    padding-right: 210px;
+}
+#nav > a >#cart-logo{
+    width: 30%;
+}
+#nav #cart-flex{
+    width: 60px;
+    display: flex;
+    justify-content: space-around;
+}
