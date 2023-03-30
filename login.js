@@ -24,6 +24,7 @@ formInp.addEventListener("submit",(e)=>{
     }
 
     formInp.reset();
+    
 })
 
 function checkSignIN(customerEmail,customerpassword){
