@@ -31,10 +31,16 @@ body{
 }
 #nav > a h2{
     background-color: rgb(234, 71, 22);
+    border: 1px solid;
     border-radius: 5px;
     padding: 6px;
     color: white;
     font-size: smaller;
+}
+#login-signup:hover{
+    background-color: white;
+    color: rgb(234, 71, 22);
+    border: 1px solid rgb(234, 71, 22);
 }
 #nav > #Filter-location{
     border: none;
@@ -44,6 +50,10 @@ body{
     margin-left: -130px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: smaller;
+}
+#nav > a h3:hover{
+    color: rgb(143, 212, 246);
+    font-size: 13px;
 }
 #search{
     background-color: aliceblue;
@@ -73,6 +83,120 @@ body{
     width: 50%;
     display: flex;
     justify-content: space-evenly;
+}
+#nav2-card2 a{
+    position: relative;
+    font-size: 1.1em;
+    color: grey;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+#nav2-card2 a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(186, 187, 187);
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+#nav2-card2 a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+#package-container{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: auto;
+    gap: 60px;
+}
+#package-container > .card > img{
+    width: 100%;
+}
+.card-1{
+    text-align: center;
+    margin-left: 60px;
+    margin-top: -30px;
+    width: 15%;
+    position: absolute;
+    display: flex;
+    border: 1px solid rgb(202, 200, 200);
+    background-color: #fff;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card-1 img{
+    width: 20%;
+}
+.card-1 >p{
+    font-size: smaller;
+    color: grey;
+}
+.card-1:hover{
+    background-color: rgb(248, 248, 245);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+#heading{
+    margin-left: 130px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 40px;
+}
+#footer1{
+    background-color: rgb(242, 243, 251);
+    padding: 20px 130px 8px 130px;
+    width: 99%;
+    margin: auto;
+}
+#footer1 p{
+    font-size: smaller;
+    color: rgb(169, 171, 173);
+}
+#footer1 h6{
+    color: rgb(100, 102, 105);
+}
+#footer2 h4, #footer2 p{
+    color: rgb(100, 102, 105);
+}
+#footer2{
+    background-color: rgb(242, 243, 251);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 20px 130px 8px 130px;
+    width: 99%;
+    margin: auto;
+}
+#footer2 button{
+    border-radius: 5px;
+    border: 1px solid;
+    width: 60%;
+    height: 35px;
+}
+#footer2 #playstore-logo{
+    width: 120%;
+}
+#footer2 #playstore-logo img{
+    width: 100%;
+}
+#footer-logo{
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#footer-logo #footer-logo-card a img{
+    width: 8%;
+}
+#footer-logo-card{
+    width: 40%;
+    margin: auto;
+    margin-left: 290px;
 }
 #nav2-card2 a{
     

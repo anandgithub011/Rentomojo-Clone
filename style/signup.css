@@ -30,10 +30,16 @@ body{
 }
 #nav > a h2{
     background-color: rgb(234, 71, 22);
+    border: 1px solid;
     border-radius: 5px;
     padding: 6px;
     color: white;
     font-size: smaller;
+}
+#login-signup:hover{
+    background-color: white;
+    color: rgb(234, 71, 22);
+    border: 1px solid rgb(234, 71, 22);
 }
 #nav > #Filter-location{
     border: none;
@@ -44,34 +50,96 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: smaller;
 }
+#nav > a h3:hover{
+    color: rgb(143, 212, 246);
+    /* font-size: 13px; */
+}
 #container{
     margin: auto;
-    width: 60%;
+    width: 55%;
     display: flex;
     flex-direction: row;
 }
 #container img{
     width: 100%;
 }
+#animation{
+    margin-left: -70px;
+    /* height: 20%; */
+    margin-top: 25px;
+    border: 55px solid rgb(235, 233, 233);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+#animation>img{
+    /* border-radius: 19px; */
+    border: 42px solid rgb(187, 185, 185);
+    border-radius:32px;
+    margin-top: 30px;
+}
 form{
-    margin: auto;
+    /* width: 60%; */
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-top: 24px;
+    margin-right: -70px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-#form{
-    /* flex-direction: column; */
-    padding: 40px;
+    padding: 45px;
     border: 1px solid rgb(255, 253, 253);
-    border-radius: 10px;
-    background-color: rgb(247, 253, 253);
+    background-color:rgb(235, 233, 233);
     gap: 30px;
 }
+#form #submit{
+    background-color: transparent;
+    padding: 15px 50px 15px 50px;
+    border: none;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: rgb(90, 194, 247);
+    
+}
+#form>#submit:hover {
+    background-color: rgb(146, 215, 250);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    cursor: pointer;
+    transition: .5s;
+}
 #form input{
-    padding: 15px;
+    padding: 10px;
     border-radius: 5px;
     padding-left: 30px;
     padding-right: 30px;
+}
+#form input:hover{
+    background-color: #fff;
+    transition: .5s;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+#form > a:hover{
+    color: red;
+}
+#form > a > p{
+    text-align: center;
+    border: 1px solid rgb(223, 221, 221);
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(234, 235, 229);
+    color: rgb(240, 17, 17);
+}
+#form > a > p:hover{
+    border: 1px solid rgb(239, 16, 16);
+    background-color: #fff;
+    transition: .5s;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+#form > h1{
+    margin-top: -30px;
+    color: rgb(12, 133, 247);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 #search{
     background-color: aliceblue;
@@ -80,11 +148,17 @@ form{
     padding: 8px;
     padding-right: 210px;
 }
+#search:hover{
+    background-color: rgb(222, 252, 252);
+}
 #nav > a >#cart-logo{
-    width: 30%;
+    width: 45%;
 }
 #nav #cart-flex{
     width: 60px;
     display: flex;
     justify-content: space-around;
+}
+a{
+    text-decoration: none;
 }

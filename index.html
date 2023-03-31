@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/index.css">
     <title>HOME-4-FURNITURE</title>
-    <style></style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
 </head>
 <body>
     <div id="navbar">
@@ -35,12 +36,32 @@
                 <h1>Cart</h1>
             </a>
             <a href="./signup.html">
-                <h2>LOGIN/SIGNUP</h2>
+                <h2 id="login-signup">LOGIN/SIGNUP</h2>
             </a>
         </div>
     </div>
-    <div id="home-page-image">
-        <img src="https://s.rmjo.in/AC-banner-Web-.jpg" alt="err">
+    <div id="swipe">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="https://s.rmjo.in/AC-banner-Web-.jpg"></div>
+              <div class="swiper-slide"><img src="https://s.rmjo.in/Fitness-offer-banner-for-Web--2.jpg"></div>
+              <div class="swiper-slide"><img src="https://s.rmjo.in/Paytm-Payments-Bank-web-.jpg"></div>
+              <div class="swiper-slide"><img src="https://s.rmjo.in/Referral%20banner%20Web.jpg"></div>
+              <div class="swiper-slide"><img src="https://s.rmjo.in/WP-Web.png"></div>
+              <div class="swiper-slide"><img src="https://s.rmjo.in/Paytm-CB-Offer-web-%20(1).jpg"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+            <!-- If we need scrollbar
+            <div class="swiper-scrollbar"></div> -->
+          </div>
     </div>
     <div id="category-rent">
         <a href="./package.html">
@@ -81,10 +102,15 @@
         </a>
     </div>
     <select id="filter">
-        <option value="">Select Brand</option>
-        <option value="Puma">Puma</option>
-        <option value="Gap">Gap</option>
-        <option value="Bady Moo">Bady Moo</option>
+        <option value="" id="select">Select Product</option>
+        <option value="Bed">Bed</option>
+        <option value="Table">Table</option>
+        <option value="Chair">Chair</option>
+        <option value="Sofa">Sofa</option>
+        <option value="TV Unit">TV Unit</option>
+        <option value="Wardrobe">Wardrobe</option>
+        <option value="Mattress">Mattress</option>
+        <option value="Dressing Table">Dressing Table</option>
     </select>
     <div id="product">
         <h2 id="firstline">You'll love to</h2>
@@ -126,7 +152,7 @@
             <h4>Keep upgrading</h4>
             <p>Bored of the same product? Upgrade to try another, newer design and enjoy the change!</p>
         </div>
-        <button>KNOW MORE</button>
+        <button>KNOW MORE ></button>
     </div>
     <div id="footer1">
         <h5>4-FURNITURE: Upgrade To Your Dream Lifestyle At An Unbelievably Low Price!</h5>
@@ -155,7 +181,40 @@
         <p>Blog</p>
         <p>Rental Terms & Conditions</p>
         <h4>DOWNLOAD APP</h4>
+        <p>Contact</p>
+        <p> </p>
+        <p> </p>
+        <a href="https://play.google.com/store/games" target="_blank" id="playstore-logo">
+            <img src="https://th.bing.com/th/id/R.238bbd1132e38a6e4a442044c9bf4ed7?rik=3qBv5Df2uy4eGA&riu=http%3a%2f%2fswiftscales.com%2fwp-content%2fuploads%2f2016%2f02%2fbuylinks.png&ehk=KZZ%2bTZnCr6MjNRGBqb48nvr%2fAhdkJV81Du0enbPRlJY%3d&risl=&pid=ImgRaw&r=0" alt="">
+        </a>
+        <p>Our Benefits</p>
+        <p> </p>
+        <p> </p>
+        <p> </p>
+        <p>Sitemap</p>
     </div>
+    <div id="footer-logo">
+        <p>2023.alphaworknet Pvt. Ltd.</p>
+        <div id="footer-logo-card">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="https://islandpestcontrol.com/wp-content/uploads/2015/08/facebook.png" alt="">
+            </a>
+            <a href="https://twitter.com/explore" target="_blank">
+                <img src="https://clipartcraft.com/images/twitter-logo-png-round-3.png" alt="">
+            </a>
+            <a href="https://in.linkedin.com/" target="_blank">
+                <img src="https://thebigpicturepeople.co.uk/wp-content/uploads/2020/05/linkedin.svg" alt="">
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="https://th.bing.com/th/id/R.359f4289d51fea25f6b747d56a91a656?rik=aSx%2bsimhJR9Obw&riu=http%3a%2f%2fmksfoundation.org.pk%2fwp-content%2fuploads%2f2020%2f03%2fyoutube_icon.png&ehk=3JBnGPwTgQaP%2bM%2btyN1fpmZyvq0082xSfyaJiHBUwzU%3d&risl=&pid=ImgRaw&r=0" alt="">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="https://th.bing.com/th/id/R.03dbdffb2184a744ca4a88dca0b483b1?rik=cRRRhiuPCXJ0DQ&riu=http%3a%2f%2fwww.institut-francais.org.uk%2ftotallyserialized%2ftransitional%2fimages%2finstagram-logo.png&ehk=pVvhg%2b92LfwPXPNRr8O6sCsYBmuU31i8TxVbczX5QT0%3d&risl=&pid=ImgRaw&r=0" alt="">
+            </a>
+        </div> 
+        <a href="">Go Up</a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </body>
 <script  src="index.js"></script>
 </html>

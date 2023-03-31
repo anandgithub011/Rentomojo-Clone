@@ -12,18 +12,23 @@ formInp.addEventListener("submit",function(e){
         customerEmail: emailInp.value,
         customerPass: passInp.value,
     }
-// console.log(objlogin);
+
     if(checkSignIN(objlogin.customerEmail,objlogin.customerPass)==false){
         alert("WRONG CREDENTIAL");
-    
+        
+    }
+    else if((checkSignIN(objlogin.customerEmail=="")||(objlogin.customerPass==""))){
+        
+        alert("WRONG CREDENTIAL");
+
     }
     else{
+        
         localStorage.setItem("login",JSON.stringify(LSData));
         alert("Login Successful");
         window.location.href="./index.html";
     }
     formInp.reset();
-
 })
 
 function checkSignIN(customerEmail,customerPass){
