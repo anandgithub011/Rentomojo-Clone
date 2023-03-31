@@ -1,13 +1,9 @@
-// let LSData = localStorage.getItem("cart");
-// if (LSData === null) {
-//     LSData = [];
-// } else {
-//     LSData = JSON.parse(LSData);
-// }
 let LSData = JSON.parse(localStorage.getItem("cart")) || [];
+
 const container = document.querySelector(".container");
 
 Display(LSData);
+
 function Display(data) {
     container.innerHTML = "";// null also fine
     for (let i = 0; i < data.length; i++) {
@@ -16,25 +12,25 @@ function Display(data) {
         const image = document.createElement("img");
         image.setAttribute("src", data[i].img);
 
-        const name = document.createElement("h2");
+        const name = document.createElement("p");
         name.innerText = data[i].name;
 
         const price = document.createElement("p");
-        price.innerText = data[i].price;
-        // if (data[i].price >= 1000) {
-        //     price.style.color = "red";
-        // }
-
-
-        const brand = document.createElement("p");
-        brand.innerText = data[i].brand;
-
-
-        const category = document.createElement("p");
-        category.innerText = data[i].catagory;
+        price.innerText = `₹${data[i].price}`;
 
         const deleteFromCart = document.createElement("button");
-        deleteFromCart.innerText = "Delete";
+        deleteFromCart.innerText = "Remove";
+
+        const addToWishlist = document.createElement("button");
+        addToWishlist.innerText = "Wishlist";
+
+        addToWishlist.addEventListener("click",function(){
+            
+            LSData.push(data[i]);
+            localStorage.setItem("wishlist"),JSON.stringify(LSData);
+
+        })
+
         deleteFromCart.addEventListener("click", function () {
             LSData = LSData.filter(function (element, index) {
                 // i = 1
@@ -48,7 +44,7 @@ function Display(data) {
             Display(LSData);
         })
 
-        product.append(image, name, price, brand, category, deleteFromCart);
+        product.append(image, name, price, deleteFromCart,addToWishlist);
         container.append(product);
     }
 

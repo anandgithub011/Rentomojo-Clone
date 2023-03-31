@@ -20,14 +20,17 @@ formInp.addEventListener("submit",function(ele){
         alert("Signup Successful");
         LSData.push(obj);
         localStorage.setItem("signup",JSON.stringify(LSData));
+        window.location.href="./login.html";
 
+    }
+    else if(checkEmail(obj.customerEmail == "" || obj.customerPass == "" || obj.customerName =="")){
+
+        alert("Wrong Crenditial");
+        
     }
     else{
-
         alert("Account already exist!");
-
     }
-    window.location.href="./login.html";
     formInp.reset();
 
 })
