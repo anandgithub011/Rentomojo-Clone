@@ -23,7 +23,7 @@ const PRODUCT_DATA = [
     {
         category: "Chair",
         name: "Morris Office Chair",
-        price: "2000",
+        price: "200",
         productID: "4",
         img: "https://p.rmjo.in/moodShot/8lm1gbal-1024x512.jpg",
     },
@@ -44,7 +44,7 @@ const PRODUCT_DATA = [
     {
         category: "Table",
         name: "Stuart Study Table",
-        price: "2000",
+        price: "200",
         productID: "7",
         img: "https://p.rmjo.in/moodShot/xsoym05h-1024x512.jpg",
     },
@@ -65,7 +65,7 @@ const PRODUCT_DATA = [
     {
         category: "Sofa",
         name: "Barney Leather Recliner (Brown)",
-        price: "456",
+        price: "1456",
         productID: "10",
         img: "https://p.rmjo.in/moodShot/z3vtekv3-1024x512.jpg"
     },
@@ -86,35 +86,35 @@ const PRODUCT_DATA = [
     {
         category: "Wardrobe",
         name: "Magnum 3-Door Wardrobe",
-        price: "765",
+        price: "1265",
         productID: "13",
         img: "https://p.rmjo.in/moodShot/vvwn7p50-1024x512.jpg",
     },
     {
         category: "Bed",
         name: "Poise Wooden King Bed (6x6)",
-        price: "9999",
+        price: "999",
         productID: "14",
         img: "https://p.rmjo.in/moodShot/8c0m7i0y-1024x512.jpg",
     },
     {
         category: "Bed",
         name: "Poise Wooden King Bed (6x6)",
-        price:"745",
+        price:"945",
         productID: "15",
         img: "https://p.rmjo.in/moodShot/8c0m7i0y-1024x512.jpg",
     },
     {
         category: "Table",
         name: "Poise Study Table",
-        price: "799",
+        price: "499",
         productID: "16",
         img: "https://p.rmjo.in/moodShot/hoopqj5t-1024x512.jpg",
     },
     {
         category: "Bed",
         name: "Napster Metal Queen Bed (6x5)",
-        price: "2000",
+        price: "1050",
         productID: "17",
         img: "https://p.rmjo.in/moodShot/b5ohrnvw-1024x512.jpg",
     },
@@ -135,28 +135,28 @@ const PRODUCT_DATA = [
     {
         category: "Mattress",
         name: "Queen Foam Mattress (6x5)",
-        price: "2000",
+        price: "200",
         productID: "20",
         img: "https://p.rmjo.in/moodShot/25s0hqv0-1024x512.jpg",
     },
     {
         category: "Dressing Table",
         name: "Brook Dressing Table",
-        price: "1347",
+        price: "347",
         productID: "21",
         img: "https://p.rmjo.in/moodShot/y0hv1z09-1024x512.jpg",
     },
     {
         category: "Table",
         name: "Caramel 4-Seater Coffee Table (Blue)",
-        price: "976",
+        price: "476",
         productID: "22",
         img: "https://p.rmjo.in/moodShot/d09x32ec-1024x512.jpg",
     },
     {
         category: "Bed",
         name: "Napster Metal Queen Bed (White 6x5)",
-        price: "456",
+        price: "1456",
         productID: "23",
         img: "https://p.rmjo.in/moodShot/yhykhfe8-1024x512.jpg"
     },
@@ -182,6 +182,23 @@ const container = document.querySelector(".container");
 
 const filter = document.querySelector("#filter");
 
+let searchInp = document.querySelector("#navbar #search");
+
+searchInp.addEventListener("input",function(){
+
+    let filtereds = PRODUCT_DATA.filter(function(elem){
+
+        if(elem.name.toLowerCase().includes(searchInp.value.toLowerCase()) == true){
+            return true;
+        }
+        else{
+            return false;
+        }
+    })
+    Display(filtereds)
+})
+
+
 filter.addEventListener("change", function () {
 
     if (filter.value === "") {
@@ -200,7 +217,6 @@ filter.addEventListener("change", function () {
 })
 
 Display(PRODUCT_DATA)
-// console.log(PRODUCT_DATA);
 
 function Display(data){
 
@@ -217,60 +233,60 @@ function Display(data){
         
         image.setAttribute("src", ele.img);
         name.innerText = ele.name;
-        price.innerText = `₹${ele.price}`;
+        price.innerText = `₹${ele.price}/Month`;
         addToCart.innerText = "Add TO Cart";
 
         addToCart.addEventListener("click", function () {
-            if(checkAvailable(ele)==true){
+
+            if(checkAvailable(ele)){
                 alert("Product Already in Cart")
-                console.log(ele)
+                
             }
             else{
-                LSData.push({...ele,quantity:1});
+                LSData.push({...ele, quantity: 1});
+
                 localStorage.setItem("cart",JSON.stringify(LSData));
-                alert("Product Added To Cart")
+                // alert("Product Added To Cart")
             }
-        })
+        });
         product.append(image,name,price,addToCart);
         container.append(product);
-    })
-
+    });
 }
-function checkAvailable(ele){
+function checkAvailable(el){
 
     for(let i = 0; i < LSData.length; i++){
 
-        if(ele.productId == LSData[i].productId){
+        if(el.productID === LSData[i].productID){
             return true;
         }
     }
     return false;
-    
 }
 
-// const swiper = new Swiper('.swiper', {
-//     // Optional parameters
-//     // direction: 'vertical',
-//     autoplay: {
-//         delay: 3000,
-//         disableOnInteraction: false,
-//     },
-//     loop: true,
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    // direction: 'vertical',
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    loop: true,
   
-//     // If we need pagination
-//     pagination: {
-//       el: '.swiper-pagination',
-//       clickable: true,
-//     },
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
   
-//     // Navigation arrows
-//     navigation: {
-//       nextEl: '.swiper-button-next',
-//       prevEl: '.swiper-button-prev',
-//     },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
   
-//     // // And if we need scrollbar
-//     // scrollbar: {
-//     //   el: '.swiper-scrollbar',
-//     // },
-//   });
+    // // And if we need scrollbar
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    // },
+  });
