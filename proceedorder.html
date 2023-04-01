@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/proceedorder.css">
+    <title>Login-4-FURNITURE</title>
+</head>
+<body>
+    <div id="navbar">
+        <div id="logo">
+            <a href="./index.html">
+                <img src="./4-furniture (1).png" alt="">
+            </a>
+        </div>
+        <div id="nav">
+            <a href="./index.html">
+                <h3>4-FURNITURE</h3>
+            </a>
+            <select name="" id="Filter-location">
+                <option value="">Location</option>
+                <option value="New Delhi">New Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Bengaluru">Bengaluru</option>
+                <option value="Patna">Patna</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Dehradun">Dehradun</option>
+            </select>
+            <input type="text" id="search" placeholder="Search for products">
+            <a href="./cart.html" id="cart-flex">
+                <img src="https://cdn-icons-png.flaticon.com/512/263/263142.png" id="cart-logo" alt="">
+                <h1>Cart</h1>
+            </a>
+            <a href="./signup.html">
+                <h2 id="login-signup">LOGIN/SIGNUP</h2>
+            </a>
+        </div>
+    </div>
+    <div id="box">
+        <div id="container-father">
+            <div id="container-child2">
+                <!-- <h1 id="total">Final Amount:- <span id="price-count">0</span></h1> -->
+            </div>
+        </div>
+        <div>
+            <h1>Add Your Address</h1>
+            <form id="form">
+                <input type="text" placeholder="Enter Full Name" id="name">
+                <select name="" id="Filter-location">
+                    <option value="">STATE</option>
+                    <option value="New Delhi">New Delhi</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Bengaluru">Bengaluru</option>
+                    <option value="Patna">Patna</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Dehradun">Dehradun</option>
+                    <option value="CommingSoon">CommingSoon ...</option>
+                </select>
+                <input type="text" placeholder="Address" id="address">
+                <input type="text" placeholder="Landmark" id="landmark">
+                <input type="number" placeholder="PINCODE" id="pin">
+                <a href="./placeorder.html"><h3 id="placeorder">PLACE ORDER</h3></a>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    let placeInp = document.getElementById("placeorder")
+
+    placeInp.addEventListener("click",function(){
+
+        // localStorage.removeItem("cart")
+        // window.location.href="./placeorder.html"
+        // alert("your order placed successful")
+        placed();
+    })
+
+    function placed(){
+
+        localStorage.removeItem("cart")
+        // alert("your order placed successful")
+        // window.location.href="./placeorder.html"
+    }
+</script>
+</html>

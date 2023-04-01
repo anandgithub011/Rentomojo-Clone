@@ -23,7 +23,6 @@ formInp.addEventListener("submit",function(e){
 
     }
     else{
-        
         localStorage.setItem("login",JSON.stringify(LSData));
         alert("Login Successful");
         window.location.href="./index.html";

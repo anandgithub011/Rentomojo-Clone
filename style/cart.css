@@ -75,42 +75,155 @@ body{
     display: flex;
     justify-content: space-between;
     margin: auto;
-    /* gap: 10px; */
 }
 .container {
     width: 55%;
     margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    /* margin: auto; */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
 }
 .container>div{
+    height: 260px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     padding: 15px;
     border-radius: 10px;
 }
+.container button:nth-child(7){
+    color: rgb(241, 246, 246);
+    background-color: rgb(242, 54, 21);
+    padding: 3px;
+    border-radius: 5px;
+    margin-left: 15px;
+    border: 1px none;
+}
+.container button:nth-child(8){
+    color: rgb(241, 24, 8);
+    background-color: rgb(247, 242, 240);
+    border: 1px solid red;
+    padding: 2px;
+    border-radius: 5px;;
+    gap: 10px;
+    border: 1px none;
+    position: absolute;
+    margin-left: 9px;
+    margin-top: 3px;
+    border: 1px solid red;
+}
+.container button:nth-child(7):hover{
+    color: rgb(247, 247, 247);
+    background-color: rgb(236, 127, 127);
+    border: 1px solid red;
+    transition: .5s;
+    
+    
+}
+.container button:nth-child(8):hover{
+    color: rgb(249, 241, 240);
+    transition: .5s;
+    background-color: rgba(255, 5, 5, 0.964);
+    
+}
+.container button:nth-child(4){
+    color: rgb(241, 246, 246);
+    background-color: rgb(247, 106, 106);
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+.container button:nth-child(6){
+    color: rgb(255, 255, 255);
+    background-color: rgb(247, 111, 111);
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid red;
+}
+.container button:nth-child(4):hover{
+    border: 1px solid red;
+    color: rgb(255, 61, 7);
+    background-color: rgb(251, 248, 248);
+}
+.container button:nth-child(6):hover{
+    color: rgb(255, 61, 7);
+    background-color: rgb(251, 248, 248);
+    border: 1px solid red;
+}
 
 #container-child2{
-    display: flex;
     width: 40%;
-    border: 2px solid rgb(230, 232, 233);
-    height: 650px;
+    border: 2px solid rgb(240, 241, 241);
+    height: 600px;
     border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     margin-top: 50px;
-    background-color:rgb(250, 249, 230);
-    font-size: 10px;
-    color: rgb(10, 141, 249);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    background-color:rgb(234, 234, 232);
     padding: 15px;
 }
 
 #container-child2 >a> img{
-    width: 20%;
+    width: 1.5%;
+    margin-left: 400px;
+    margin-top: -51px;
+    position: absolute;
+}
+#container-child2 > h2{
+    color: rgba(78, 79, 79, 0.899);
+    border-bottom: 2px solid grey;
+
+}
+#container-child2 #wishlist h2{ 
+    color: rgb(251, 251, 251);
+    border: 1px solid red;
+    border-radius: 8px;
+    background-color: rgb(254, 92, 119);
+    padding: 8px;
+}
+
+#container-child2 #wishlist h2:hover{
+    /* width: 10.5%; */
+    color: rgb(253, 47, 78);
+    background-color: rgb(255, 227, 232);
+    border: 1px solid red;
+    transition: .5s;
+}
+#container-child2 #delivery-fee{
+    margin-left: 360px;
+    position: absolute;
+    margin-top: -40px;
+}
+#container-child2 h1{
+    border-top: 1px dashed grey;
+}
+#container-child2 span{
+    margin-left: 120px;
+}
+#container-child2 #total{
+    font-family: monospace;
+}
+#container-child2 #proceedorder button{
+    color: rgb(251, 251, 251);
+    font-size: large;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(79, 176, 250);
+    padding: 15px;
+    padding: 20px 150px 20px 150px;
+    transition: .5s;
+    display: block;
+    margin: auto;
+    margin-top: 150px;
+    
+}
+#container-child2 #proceedorder button:hover{
+    color:  rgb(9, 145, 248);
+    background-color: rgb(250, 252, 253);
+    border: 2px solid rgb(0, 166, 255);
 }
 
 .container img {
-    width: 50%;
+    width: 100%;
 }
 a{
     text-decoration:none;
