@@ -278,10 +278,6 @@ a{
         margin-left: -220px;
     }
     #nav > a h3{
-        /* color: rgb(96, 96, 95);
-        margin-left: -130px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: smaller; */
         display: none;
     }
     #nav > a h3:hover{
@@ -396,18 +392,6 @@ a{
     #container-child2 #total{
         font-family: monospace;
     }
-    /* #container-child2 #proceedorder button{
-        color: rgb(251, 251, 251);
-        font-size: large;
-        border-radius: 5px;
-        border: none;
-        background-color: rgb(79, 176, 250);
-        padding: 15px;
-        padding: 20px 50px 20px 50px;
-        transition: .5s;
-        display: block;
-        
-    }
     #container-child2 #proceedorder button:hover{
         color:  rgb(9, 145, 248);
         background-color: rgb(250, 252, 253);
@@ -468,10 +452,7 @@ a{
         /* display: none; */
     }
     #nav > a h3{
-        /* color: rgb(96, 96, 95);
-        margin-left: -130px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: smaller; */
+
         display: none;
     }
     #nav > a h3:hover{
