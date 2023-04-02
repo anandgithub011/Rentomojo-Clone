@@ -74,7 +74,6 @@ body{
     width: 80%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin: auto;
 }
 .container {
@@ -160,7 +159,7 @@ body{
     width: 35%;
     border: 2px solid rgb(240, 241, 241);
     border-radius: 5px;
-    margin-top: 5%;
+    margin-top: 45px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     background-color:rgb(234, 234, 232);
     padding: 2%;
@@ -279,10 +278,6 @@ a{
         margin-left: -220px;
     }
     #nav > a h3{
-        /* color: rgb(96, 96, 95);
-        margin-left: -130px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: smaller; */
         display: none;
     }
     #nav > a h3:hover{
@@ -290,11 +285,6 @@ a{
         transition: .4s;
     }
     #search{
-        /* background-color: aliceblue;
-        border-radius: 5px;
-        border: 1px solid;
-        padding: 8px;
-        padding-right: 210px; */
         display: none;
     }
     #nav > a >#cart-logo{
@@ -324,7 +314,7 @@ a{
         margin-top: 6%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 9%;
+        gap: 5%;
     }
     .container>div{
         width: 105%;
@@ -365,7 +355,7 @@ a{
         border: 1px solid red;
     }
     #container-child2{
-        margin-top: -53%;
+        /* margin-top: -90%; */
     }
    
     #container-child2 >a> img{
@@ -401,18 +391,6 @@ a{
     }
     #container-child2 #total{
         font-family: monospace;
-    }
-    /* #container-child2 #proceedorder button{
-        color: rgb(251, 251, 251);
-        font-size: large;
-        border-radius: 5px;
-        border: none;
-        background-color: rgb(79, 176, 250);
-        padding: 15px;
-        padding: 20px 50px 20px 50px;
-        transition: .5s;
-        display: block;
-        
     }
     #container-child2 #proceedorder button:hover{
         color:  rgb(9, 145, 248);
@@ -474,10 +452,7 @@ a{
         /* display: none; */
     }
     #nav > a h3{
-        /* color: rgb(96, 96, 95);
-        margin-left: -130px;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size: smaller; */
+
         display: none;
     }
     #nav > a h3:hover{
@@ -485,11 +460,7 @@ a{
         transition: .4s;
     }
     #search{
-        /* background-color: aliceblue;
-        border-radius: 5px;
-        border: 1px solid;
-        padding: 8px;
-        padding-right: 210px; */
+       
         display: none;
     }
     #nav > a >#cart-logo{
@@ -519,7 +490,6 @@ a{
         margin-top: 6%;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        /* gap: 9%; */
     }
     .container>div{
         width: 129%;
@@ -531,7 +501,6 @@ a{
      #container-child2{
         width: 130%;
         margin-left: 20%;
-        margin-top: 30%;
     }
     .container button:nth-child(7){
         color: rgb(241, 246, 246);
