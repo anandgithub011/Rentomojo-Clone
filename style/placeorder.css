@@ -77,7 +77,6 @@ body{
     justify-content: space-around;
 }
 #form{
-    /* width: 70%; */
     margin: auto;
     display: flex;
     flex-direction: column;

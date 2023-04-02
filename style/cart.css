@@ -479,11 +479,7 @@ a{
         transition: .4s;
     }
     #search{
-        /* background-color: aliceblue;
-        border-radius: 5px;
-        border: 1px solid;
-        padding: 8px;
-        padding-right: 210px; */
+       
         display: none;
     }
     #nav > a >#cart-logo{
@@ -513,7 +509,6 @@ a{
         margin-top: 6%;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        /* gap: 9%; */
     }
     .container>div{
         width: 129%;
@@ -525,7 +520,6 @@ a{
      #container-child2{
         width: 130%;
         margin-left: 20%;
-        /* margin-top: 30%; */
     }
     .container button:nth-child(7){
         color: rgb(241, 246, 246);
