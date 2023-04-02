@@ -74,40 +74,43 @@ body{
     width: 80%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: auto;
 }
 .container {
-    width: 55%;
-    margin-top: 50px;
+    width: 62%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    margin: auto;
+    margin-top: 4%;
+    margin-left: -1%;
+    gap: 7%;
 }
 .container>div{
-    height: 260px;
+    width: 120%;
+    /* height: 35%; */
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-    padding: 15px;
-    border-radius: 10px;
+    padding: 7%;
+    border-radius: 5%;
 }
 .container button:nth-child(7){
     color: rgb(241, 246, 246);
     background-color: rgb(242, 54, 21);
-    padding: 3px;
-    border-radius: 5px;
-    margin-left: 15px;
+    padding: 2%;
+    border-radius: 15%;
+    margin-left: 5%;
     border: 1px none;
 }
 .container button:nth-child(8){
     color: rgb(241, 24, 8);
     background-color: rgb(247, 242, 240);
     border: 1px solid red;
-    padding: 2px;
-    border-radius: 5px;;
-    gap: 10px;
+    padding: 3px;
+    border-radius: 12%;
+    /* gap: px; */
     border: 1px none;
     position: absolute;
-    margin-left: 9px;
-    margin-top: 3px;
+    margin-left: 0.5%;
     border: 1px solid red;
 }
 .container button:nth-child(7):hover{
@@ -128,16 +131,18 @@ body{
     color: rgb(241, 246, 246);
     background-color: rgb(247, 106, 106);
     padding: 3px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 3%;
+    margin-left: 3%;
+    padding-bottom: 2%;
+    padding-right: 2.5%;
     border: 1px solid red;
-    border-radius: 5px;
+    border-radius: 18%;
 }
 .container button:nth-child(6){
     color: rgb(255, 255, 255);
     background-color: rgb(247, 111, 111);
-    padding: 3px;
-    border-radius: 5px;
+    padding: 2%;
+    border-radius: 18%;
     border: 1px solid red;
 }
 .container button:nth-child(4):hover{
@@ -152,20 +157,19 @@ body{
 }
 
 #container-child2{
-    width: 40%;
+    width: 35%;
     border: 2px solid rgb(240, 241, 241);
-    height: 600px;
     border-radius: 5px;
-    margin-top: 50px;
+    margin-top: 5%;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
     background-color:rgb(234, 234, 232);
-    padding: 15px;
+    padding: 2%;
 }
 
 #container-child2 >a> img{
-    width: 1.5%;
-    margin-left: 400px;
-    margin-top: -51px;
+    width: 2.5%;
+    margin-left: 20%;
+    margin-top: -4.5%;
     position: absolute;
 }
 #container-child2 > h2{
@@ -175,32 +179,26 @@ body{
 }
 #container-child2 #wishlist h2{ 
     color: rgb(251, 251, 251);
-    border: 1px solid red;
     border-radius: 8px;
     background-color: rgb(254, 92, 119);
-    padding: 8px;
+    padding: 3%;
 }
 
 #container-child2 #wishlist h2:hover{
-    /* width: 10.5%; */
     color: rgb(253, 47, 78);
     background-color: rgb(255, 227, 232);
     border: 1px solid red;
     transition: .5s;
 }
 #container-child2 #delivery-fee{
-    margin-left: 360px;
+    margin-left: 21%;
     position: absolute;
-    margin-top: -40px;
-}
-#container-child2 h1{
-    border-top: 1px dashed grey;
-}
-#container-child2 span{
-    margin-left: 120px;
+    margin-top: -3%;
 }
 #container-child2 #total{
+    border-top: 1px dashed grey;
     font-family: monospace;
+    margin-top: 25%;
 }
 #container-child2 #proceedorder button{
     color: rgb(251, 251, 251);
@@ -208,12 +206,11 @@ body{
     border-radius: 5px;
     border: none;
     background-color: rgb(79, 176, 250);
-    padding: 15px;
-    padding: 20px 150px 20px 150px;
+    padding: 6% 30% 6% 30%;
     transition: .5s;
-    display: block;
-    margin: auto;
-    margin-top: 150px;
+    /* display: block; */
+    /* margin: auto; */
+    margin-top: 35%;
     
 }
 #container-child2 #proceedorder button:hover{
@@ -228,3 +225,378 @@ body{
 a{
     text-decoration:none;
  }
+
+
+
+
+
+ @media screen and (max-width: 867px){
+
+
+
+    #navbar{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px; */
+    }
+    #nav{
+        width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #navbar > #logo{
+        width: 40%;
+        /* position: absolute; */
+    }
+    #navbar >div > a img{
+        width: 25%;
+        border-radius: 5px;
+    }
+    #nav > a h1{
+        color: rgb(49, 49, 52);
+        font-size: smaller;
+    }
+    #nav > a h2{
+        background-color: rgb(234, 71, 22);
+        border: 1px solid;
+        border-radius: 5px;
+        padding: 6px;
+        color: white;
+        font-size: smaller;
+    }
+    #login-signup:hover{
+        background-color: white;
+        color: rgb(234, 71, 22);
+        border: 1px solid rgb(234, 71, 22);
+        transition: .4s;
+    }
+    #nav > #Filter-location{
+        border: none;
+        margin-left: -220px;
+    }
+    #nav > a h3{
+        /* color: rgb(96, 96, 95);
+        margin-left: -130px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: smaller; */
+        display: none;
+    }
+    #nav > a h3:hover{
+        color: rgb(143, 212, 246);
+        transition: .4s;
+    }
+    #search{
+        /* background-color: aliceblue;
+        border-radius: 5px;
+        border: 1px solid;
+        padding: 8px;
+        padding-right: 210px; */
+        display: none;
+    }
+    #nav > a >#cart-logo{
+        width: 30%;
+    }
+    #nav #cart-flex{
+        width: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #nav > a >#cart-logo{
+        width: 45%;
+    }
+    #nav #cart-flex{
+        width: 60px;
+        display: flex;
+        justify-content: space-around;
+    }
+    #container-father{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+    .container {
+        width: 60%;
+        margin-top: 6%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 9%;
+    }
+    .container>div{
+        width: 105%;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+        padding: 2%;
+        border-radius: 10px;
+    }
+    .container button:nth-child(8):hover{
+        color: rgb(249, 241, 240);
+        transition: .5s;
+        background-color: rgba(255, 5, 5, 0.964);
+        
+    }
+    .container button:nth-child(4){
+        color: rgb(241, 246, 246);
+        background-color: rgb(247, 106, 106);
+        padding: 3px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border: 1px solid red;
+        border-radius: 5px;
+    }
+    .container button:nth-child(6){
+        color: rgb(255, 255, 255);
+        background-color: rgb(247, 111, 111);
+        padding: 3px;
+        border-radius: 5px;
+        border: 1px solid red;
+    }
+    .container button:nth-child(4):hover{
+        border: 1px solid red;
+        color: rgb(255, 61, 7);
+        background-color: rgb(251, 248, 248);
+    }
+    .container button:nth-child(6):hover{
+        color: rgb(255, 61, 7);
+        background-color: rgb(251, 248, 248);
+        border: 1px solid red;
+    }
+    #container-child2{
+        margin-top: -53%;
+    }
+   
+    #container-child2 >a> img{
+        width: 2.5%;
+        margin-top: -6%;
+        position: absolute;
+    }
+    #container-child2 > h2{
+        color: rgba(78, 79, 79, 0.899);
+        border-bottom: 2px solid grey;
+    
+    }
+    #container-child2 #wishlist h2{ 
+        color: rgb(251, 251, 251);
+        border: 1px solid red;
+        background-color: rgb(254, 92, 119);
+    }
+    
+    #container-child2 #wishlist h2:hover{
+        /* width: 10.5%; */
+        color: rgb(253, 47, 78);
+        background-color: rgb(255, 227, 232);
+        border: 1px solid red;
+        transition: .5s;
+    }
+    #container-child2 #delivery-fee{
+        margin-left: 160px;
+        position: absolute;
+        margin-top: -40px;
+    }
+    #container-child2 h1{
+        font-size: medium;
+    }
+    #container-child2 #total{
+        font-family: monospace;
+    }
+    /* #container-child2 #proceedorder button{
+        color: rgb(251, 251, 251);
+        font-size: large;
+        border-radius: 5px;
+        border: none;
+        background-color: rgb(79, 176, 250);
+        padding: 15px;
+        padding: 20px 50px 20px 50px;
+        transition: .5s;
+        display: block;
+        
+    }
+    #container-child2 #proceedorder button:hover{
+        color:  rgb(9, 145, 248);
+        background-color: rgb(250, 252, 253);
+        border: 2px solid rgb(0, 166, 255);
+    } */
+    
+    .container img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:435px){
+
+
+    #navbar{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px; */
+    }
+    #nav{
+        width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #navbar > #logo{
+        width: 40%;
+        /* position: absolute; */
+    }
+    #navbar >div > a img{
+        width: 45%;
+        border-radius: 5px;
+    }
+    #nav > a h1{
+        color: rgb(49, 49, 52);
+        font-size: smaller;
+    }
+    #nav > a h2{
+        background-color: rgb(234, 71, 22);
+        border: 1px solid;
+        border-radius: 5px;
+        padding: 4px;
+        color: white;
+        margin-left: 10px;
+    }
+    #login-signup:hover{
+        background-color: white;
+        color: rgb(234, 71, 22);
+        border: 1px solid rgb(234, 71, 22);
+        transition: .4s;
+    }
+    #nav > #Filter-location{
+        border: none;
+        margin-left: -40px;
+        /* display: none; */
+    }
+    #nav > a h3{
+        /* color: rgb(96, 96, 95);
+        margin-left: -130px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: smaller; */
+        display: none;
+    }
+    #nav > a h3:hover{
+        color: rgb(143, 212, 246);
+        transition: .4s;
+    }
+    #search{
+        /* background-color: aliceblue;
+        border-radius: 5px;
+        border: 1px solid;
+        padding: 8px;
+        padding-right: 210px; */
+        display: none;
+    }
+    #nav > a >#cart-logo{
+        width: 20%;
+    }
+    #nav #cart-flex{
+        width: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    #nav > a >#cart-logo{
+        width: 45%;
+    }
+    #nav #cart-flex{
+        width: 60px;
+        display: flex;
+        justify-content: space-around;
+    }
+     #container-father{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+    .container {
+        width: 90%;
+        margin-top: 6%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* gap: 9%; */
+    }
+    .container>div{
+        width: 129%;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+        padding: 2%;
+        border-radius: 10px;
+    }
+   
+     #container-child2{
+        width: 130%;
+        margin-left: 20%;
+        margin-top: 30%;
+    }
+    .container button:nth-child(7){
+        color: rgb(241, 246, 246);
+        background-color: rgb(242, 54, 21);
+        padding: 2%;
+        border-radius: 15%;
+        margin-left: 5%;
+        border: 1px none;
+        font-size: 9px;
+    }
+    .container button:nth-child(8){
+        font-size: 9px;
+        color: rgb(241, 24, 8);
+        background-color: rgb(247, 242, 240);
+        border: 1px solid red;
+        padding: 3px;
+        border-radius: 12%;
+        border: 1px none;
+        position: absolute;
+        margin-left: 0.5%;
+        border: 1px solid red;
+        margin-top: 1%;
+    }
+   
+    #container-child2 >a> img{
+        width: 3.5%;
+        margin-top: -11.5%;
+        position: absolute;
+        margin-left: 30%;
+    }
+    #container-child2 > h2{
+        color: rgba(78, 79, 79, 0.899);
+        border-bottom: 2px solid grey;
+    
+    }
+    #container-child2 #wishlist h2{ 
+        color: rgb(251, 251, 251);
+        border: 1px solid red;
+        background-color: rgb(254, 92, 119);
+    }
+    
+    #container-child2 #wishlist h2:hover{
+        /* width: 10.5%; */
+        color: rgb(253, 47, 78);
+        background-color: rgb(255, 227, 232);
+        border: 1px solid red;
+        transition: .5s;
+    }
+    #container-child2 #delivery-fee{
+        font-size: small;
+        margin-left: 100px;
+        position: absolute;
+        margin-top: -28px;
+    }
+    #container-child2 > h3{
+        font-size: small;
+    }
+    #container-child2 h1{
+        font-size: medium;
+    }
+    #container-child2 #total{
+        font-family: monospace;
+    }  
+    .container img {
+        width: 100%;
+    } */
+
+}

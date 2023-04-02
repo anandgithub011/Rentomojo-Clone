@@ -246,7 +246,7 @@ function Display(data){
                 LSData.push({...ele, quantity: 1});
 
                 localStorage.setItem("cart",JSON.stringify(LSData));
-                // alert("Product Added To Cart")
+                alert("Product Added To Cart")
             }
         });
         product.append(image,name,price,addToCart);

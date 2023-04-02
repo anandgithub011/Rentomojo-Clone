@@ -67,20 +67,31 @@
 </body>
 <script>
     let placeInp = document.getElementById("placeorder")
+    let nameInp = document.getElementById("name")
+    let addressInp = document.getElementById("address")
+    let landmarkInp = document.getElementById("landmark")
+    let pinInp = document.getElementById("pin")
+    let selectInp = document.getElementById("Filter-location")
 
     placeInp.addEventListener("click",function(){
 
-        // localStorage.removeItem("cart")
-        // window.location.href="./placeorder.html"
-        // alert("your order placed successful")
-        placed();
+        // if(nameInp.value=="" || addressInp.value =="" || landmarkInp.value == "" || pinInp.value == "" || selectInp.value == ""){
+            
+        //     alert("Check your Address Details")
+            
+        // }
+        // else{
+            
+            placed();
+        // }
+        
     })
-
+    
     function placed(){
-
+        
         localStorage.removeItem("cart")
-        // alert("your order placed successful")
-        // window.location.href="./placeorder.html"
+        alert("your order placed successful")
+        // window.location.href="./proceedorder.html"
     }
 </script>
 </html>
